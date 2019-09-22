@@ -1,5 +1,17 @@
+# Remove this rule for your local project
+composer.lock
+
+# Standard WordPress files to exclude from git
+vendor
 config/wp-config.local.php
 web/wordpress
-web/content
-vendor
-composer.lock
+web/content/plugins/*
+!web/content/plugins/.gitkeep
+web/content/mu-plugins/*
+!web/content/mu-plugins/.gitkeep
+web/content/upgrade
+web/content/uploads/*
+!web/content/uploads/.gitkeep
+
+# Include any custom plugins you want to commit to git here, prefixed by !
+!web/content/mu-plugins/studio24-base
