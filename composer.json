@@ -1,0 +1,40 @@
+{
+  "name"        : "studio24/wordpress-base",
+  "description" : "Project template to build modern WordPress sites",
+  "authors"     : [
+    {
+      "name"    : "Studio 24",
+      "homepage": "https://www.studio24.net/"
+    }
+  ],
+  "type"        : "project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url" : "https://wpackagist.org"
+    }
+  ],
+  "require"     : {
+    "php"                             : ">=7.1",
+    "johnpbloch/wordpress"            : "^5.2",
+    "symfony/dotenv"                  : "^4.3",
+    "wpackagist-plugin/timber-library": "^1.11"
+  },
+  "require-dev" : {
+    "roave/security-advisories": "dev-master"
+  },
+  "extra"       : {
+    "wordpress-install-dir": "web/wordpress",
+    "installer-paths": {
+      "web/content/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/content/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+config/wp-config.local.php
+web/wordpress
+web/content
+vendor
+composer.lock
