@@ -16,9 +16,11 @@
   ],
   "require"     : {
     "php"                             : ">=7.1",
-    "johnpbloch/wordpress"            : "^5.2",
+    "johnpbloch/wordpress"            : "^5.2.3",
     "symfony/dotenv"                  : "^4.3",
-    "wpackagist-plugin/timber-library": "^1.11"
+    "wpackagist-plugin/timber-library": "^1.11",
+    "wpackagist-plugin/advanced-custom-fields": "^5.8",
+    "wpackagist-theme/twentynineteen" : "^1.4"
   },
   "require-dev" : {
     "roave/security-advisories": "dev-master"
