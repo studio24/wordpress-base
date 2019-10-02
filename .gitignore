@@ -7,11 +7,13 @@ config/wp-config.local.php
 web/wordpress
 web/content/plugins/*
 !web/content/plugins/.gitkeep
-web/content/mu-plugins/*
-!web/content/mu-plugins/.gitkeep
+web/content/mu-plugins/*/*
+web/content/themes/*
+!web/content/themes/.gitkeep
 web/content/upgrade
 web/content/uploads/*
 !web/content/uploads/.gitkeep
 
-# Include any custom plugins you want to commit to git here, prefixed by !
-!web/content/mu-plugins/studio24-base
+# Include any custom plugins, mu-plugins & themes you want to commit to git here, prefixed by !
+# E.g.
+# !web/content/plugins/my-plugin-name

@@ -12,14 +12,27 @@
     {
       "type": "composer",
       "url" : "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.8.4",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.4"
+        }
+      }
     }
   ],
   "require"     : {
     "php"                             : ">=7.1",
     "johnpbloch/wordpress"            : "^5.2.3",
     "symfony/dotenv"                  : "^4.3",
+    "wpackagist-plugin/classic-editor": "^1.5",
     "wpackagist-plugin/timber-library": "^1.11",
-    "wpackagist-plugin/advanced-custom-fields": "^5.8",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.8",
     "wpackagist-theme/twentynineteen" : "^1.4"
   },
   "require-dev" : {
@@ -38,5 +51,10 @@
         "type:wordpress-theme"
       ]
     }
+  },
+  "scripts": {
+    "command": {
+      "MyVendor\\MyClass::composerEnv"
+    }
   }
-}
+},

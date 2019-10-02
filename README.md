@@ -2,6 +2,12 @@
 
 Project template to build modern WordPress sites, based on Studio 24 standards. Inspired by [Bedrock](https://roots.io/bedrock/).
 
+## Issues
+
+Cannot load ACF Pro via Composer without exposing auth token in git repo.
+
+See https://roots.io/guides/acf-pro-as-a-composer-dependency-with-encrypted-license-key/
+
 ## Directory structure
 
 ```
