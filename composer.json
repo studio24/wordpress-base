@@ -21,7 +21,7 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%ACF_PRO_KEY}&t=5.8.4"
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
         }
       }
     }
@@ -32,6 +32,7 @@
     "symfony/dotenv"                  : "^4.3",
     "wpackagist-plugin/classic-editor": "^1.5",
     "wpackagist-plugin/timber-library": "^1.11",
+    "philippbaschke/acf-pro-installer": "^1.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "^5.8",
     "wpackagist-theme/twentynineteen" : "^1.4"
   },
@@ -51,10 +52,5 @@
         "type:wordpress-theme"
       ]
     }
-  },
-  "scripts": {
-    "command": {
-      "MyVendor\\MyClass::composerEnv"
-    }
   }
-},
+}

@@ -1,5 +1,6 @@
 # Remove this rule for your local project
 composer.lock
+.env
 
 # Standard WordPress files to exclude from git
 vendor
